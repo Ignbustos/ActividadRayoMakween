@@ -137,16 +137,12 @@ footer.bottom .links > a {
 .cajas{
     align-items: justyfied;
 }
-.card{
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.cajacontacto{
 
+.cajacontacto{
     margin-left: 1%;
     margin-top: 1600px;
-
 }
-
+.card {
+    align-items: center;
+}
 
