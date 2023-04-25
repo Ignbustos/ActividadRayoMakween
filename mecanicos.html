@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <title>Mecanicos</title>
 </head>
+<body>
     <header>
         <!-- Navbar General -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -72,13 +73,14 @@
                             <ul class="dropdown-menu boton-menu col-mb-9">
                                 <form>
                                     <div class="mb-3 correo">
-                                    <label for="exampleInputEmail1" class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
+                                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
                                     </div>
                                     <div class="mb-3 contrasena">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <a href="#" class="Register" style="text-decoration: none; color: black;">¿No tienes Cuenta?, Registrate</a>
                                     </div>
                                     <div class="form-group text-center">
 										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
@@ -94,125 +96,90 @@
         </nav>
         <!-- Termino de NavBar -->
     </header>
-    <body>
-        <!-- Cajas de Mecanicos 
-            <div class="row">
-                    <div class="card border-info mb-4" style="width: 18rem;">
-                        <img src="./Imagenes/mecanico.jpg" class="card-img-top" alt="...">
-                        <div class="card-body cajas">
-                            <h5 class="card-title">Caja del mecanico 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Ir a su pagina</a>
-                        </div>
-                    </div>
-                    <div class="card border-info mb-4" style="width: 18rem;">
-                        <img src="./Imagenes/mecanico2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body cajas">
-                            <h5 class="card-title">Caja del mecanico 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Ir a su pagina</a>
-                        </div>
-                    </div>
-                    <div class="card border-info mb-4" style="width: 18rem;">
-                        <img src="./Imagenes/mecanico3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body cajas">
-                        <h5 class="card-title">Caja del mecanico 3</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary stretched-link">Ir a su pagina</a>
-                    </div>
-                </div>
+
+        <!-- Cajas de Mecanicos -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Primer Mecanico -->
+            <div class="col">
                 <div class="card text-center">
-                    <div class="card-header">
-                        Featured
-                    </div>
+                    <img src="./Imagenes/mecanico.jpg" class="card-img-top" alt="..."> 
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Mecanico 1</h5>
+                        <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
+                        <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
                     </div>
-                    <div class="card-footer text-body-secondary">
-                        2 days ago
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Nombre del Mecanico</small>
                     </div>
                 </div>
             </div>
-        -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Segundo Mecanico -->
             <div class="col">
-                <div class="card text-center">
-                    <img src="./Imagenes/mecanico.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Mecanico 1</h5>
-                    <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
-                    <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
-                    </div>
-                    <div class="card-footer">
-                    <small class="text-body-secondary">Nombre del Mecanico</small>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
                 <div class="card text-center">
                     <img src="./Imagenes/mecanico2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Mecanico 2</h5>
-                    <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
-                    <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
+                        <h5 class="card-title">Mecanico 2</h5>
+                        <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
+                        <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
                     </div>
                     <div class="card-footer">
-                    <small class="text-body-secondary">Nombre del Mecanico</small>
+                        <small class="text-body-secondary">Nombre del Mecanico</small>
                     </div>
                 </div>
-                </div>
-                <div class="col">
+            </div>
+            <!-- Card Tercer Mecanico -->
+            <div class="col">
                 <div class="card text-center">
                     <img src="./Imagenes/mecanico3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Mecanico 3</h5>
-                    <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
-                    <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
+                        <h5 class="card-title">Mecanico 3</h5>
+                        <p class="card-text">Aqui va una pequeña reseña del mecanico, explicando cual es su especialidad</p>
+                        <a href="#" class="btn btn-secondary">Contactar al Mecanico</a>
                     </div>
                     <div class="card-footer">
-                    <small class="text-body-secondary"> Nombre del Mecanico</small>
+                        <small class="text-body-secondary"> Nombre del Mecanico</small>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
+
+    <!-- Aqui Comienza el Footer -->
+    <footer class="top">
+            <img src="./Imagenes/Logo_sin_fondo.png" alt="logo" width="50" height="50">
+        <div class="links">
+            <div>
+                <h2>Enlaces</h2>
+                <a href="#">Trabajos</a>
+                <a href="#">Mecanicos</a>
+                <a href="#">Imagenes</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div>
+                <h2>Enlaces de Interes</h2>
+                <a href="#">Columna 2</a>
+                <a href="#">Columna 2</a>
+                <a href="#">Columna 2</a>
+            </div>
+            <div>
+                <h2>Enlaces de Interes</h2>
+                <a href="#">Columna 2</a>
+                <a href="#">Columna 2</a>
+                <a href="#">Columna 2</a>
+            </div>
+        </div>
+    </footer>
+    <footer class="bottom">
+        <div class="legal">
+            <span>© Todos los derechos Reservados</span>
+            <a href="#">Licencia</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Privacidad</a>
+        </div>
+        <div class="links">
+            <a class="fa-brands fa-github"></a>
+            <a class="fa-brands fa-linkedin"></a>
+            <a class="fa-brands fa-docker"></a>
+        </div>
+    </footer>
 </body>
-<footer class="top">
-        <img src="./Imagenes/Logo_sin_fondo.png" alt="logo" width="50" height="50">
-    <div class="links">
-        <div>
-            <h2>Enlaces</h2>
-            <a href="#">Trabajos</a>
-            <a href="#">Mecanicos</a>
-            <a href="#">Imagenes</a>
-            <a href="#">Contacto</a>
-        </div>
-        <div>
-            <h2>Enlaces de Interes</h2>
-            <a href="#">Columna 2</a>
-            <a href="#">Columna 2</a>
-            <a href="#">Columna 2</a>
-        </div>
-        <div>
-            <h2>Enlaces de Interes</h2>
-            <a href="#">Columna 2</a>
-            <a href="#">Columna 2</a>
-            <a href="#">Columna 2</a>
-        </div>
-    </div>
-</footer>
-<footer class="bottom">
-    <div class="legal">
-        <span>© Todos los derechos Reservados</span>
-        <a href="#">Licencia</a>
-        <a href="#">Terminos y Condiciones</a>
-        <a href="#">Privacidad</a>
-    </div>
-    <div class="links">
-        <a class="fa-brands fa-github"></a>
-        <a class="fa-brands fa-linkedin"></a>
-        <a class="fa-brands fa-docker"></a>
-    </div>
-</footer>
 </html>
