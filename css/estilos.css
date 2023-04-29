@@ -165,18 +165,16 @@ form{
     word-spacing: 2px;
     font-weight: 400;
     font-size: 24px;
-    text-align: center;
     align-items: center;
-    margin: 1%;
     padding: 1%;
+    border: solid 1px;
+    margin: 10%;
+    border-radius: 10px;
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
 }
 div > a{
     font-size: small;
 }
-#parteDerecha{
-
-}
-.formulario{
-    margin: 1%;
-
+.formulario input{
+    text-align: center;
 }
