@@ -99,19 +99,19 @@
         <div class ="col-8 cajacontacto" >
             <form class="row g-3" style="margin-top: 1%;">
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">E-mail</label>
+                    <label for="inputEmail4" class="form-label" id="correo">E-mail</label>
                     <input type="email" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-6">
-                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <label for="inputAddress" class="form-label" id="direccion">Dirección</label>
                     <input type="text" class="form-control" id="inputDireccion" placeholder="Calle 1">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <label for="inputCity" class="form-label" id="ciudad">Ciudad</label>
                     <input type="text" class="form-control" id="inputCiudad">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">Comuna</label>
+                    <label for="inputState" class="form-label" id="comuna">Comuna</label>
                     <select id="inputState" class="form-select">
                         <option selected="">Elegir...</option>
                         <option>Providencia</option>
@@ -120,14 +120,14 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Número de Contacto</label>
+                    <label for="inputZip" class="form-label" id="numeroContacto">Número de Contacto</label>
                     <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col-mb-3">
-                    <label for="none" class="form-label">Descripción del problema</label>
+                    <label for="none" class="form-label" id="descripcion">Descripción del problema</label>
                     <input class="form-control" id="none" style="height: 150px;"></input>
                 </div>
-                <button type="submit" class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;">Enviar</button>
+                <button type="submit" class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;" onclick="return EnviarFormulario()">Enviar</button>
             </form>
         </div>
         <!--<div class="col-8" style="margin-left: 1%; margin-top: 1%;">
@@ -136,9 +136,10 @@
         <div class="col-3 ">
             <img src="./Imagenes/Logo_sin_fondo2.png" alt="contacto" width="300" height="300" style="margin-top: 10%; margin-left: 30%;">
             <p style ="margin-top: 1%; margin-left: 55%;">Mi papá</p>
-    
+            
         </div>
     </div>
+    <div class="error"></div>
     <footer class="top">
         <img src="./Imagenes/Logo_sin_fondo.png" alt="logo" width="50" height="50">
         <div class="links">
@@ -177,5 +178,6 @@
         </div>
     </footer>
 </body>
+<script src="./js/javascripts.js"></script>
 
 </html>
