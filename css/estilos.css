@@ -143,6 +143,17 @@ footer.bottom .links > a {
     height: 100px;
 }
 
+
+#regiones{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 16px;
+}
+#comunas{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 16px;
+}
 .contacto{
     align-items: center;
     text-align: start;
