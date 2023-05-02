@@ -11,7 +11,7 @@ var descripcion = document.getElementById('descripcion');
 var nombres = document.getElementById('Nombres');
 var Apellidos = document.getElementById('Apellidos');
 var Contraseña = document.getElementById('Contraseña');
-var Correo = document.getElementById('Correo')
+var Correo = document.getElementById('email');
 var Terminos = document.getElementById('Terminos');
 
 // Variable color 'Error'
@@ -37,39 +37,64 @@ function EnviarFormularioContacto(){
 }
 
 // Funcion datos 'Registro'
-function EnviarFormularioRegistro(){
-    console.log('Enviando Formulario...');
 
-    
-    var mensajeError = [];
-    
-    if(Nombres.value === null || Nombres.value === ''){
-        mensajeError.push('Debes ingresar un Nombre');
-    }
-    if(Apellidos.value === null || Apellidos.value === ''){
-        mensajeError.push('Debes ingresar un Apellido');
-    }
-    // error.innerHTML = mensajeError.join(', ');
-    
-    return false;
-}
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario);
+document.addEventListener("submit", function() {
+	if(validarFormulario()){
+		document.getElementById("miformulario").submit();
+	}
 });
 
+
 function validarFormulario() {
-    var Nombres = document.getElementById('Nombres').value;
-    if(Nombres.length == 0) {
-    alert('No has escrito nada en el Nombre');
-    return;
+    console.log('Enviando Formulario...');
+    
+    if(nombres === null || nombres.value === '') {
+        alert('No has escrito nada en el Nombre');
+        return false;
+	}
+
+	if(Apellidos === null || Apellidos.value === ''){
+        alert('Debes ingresar un Apellido');
+        return false;
     }
-    var Contraseña = document.getElementById('Contraseña').value;
-    if (Contraseña.length < 6) {
-    alert('La Contraseña no es válida');
-    return;
+    // var Contraseña = document.getElementById('Contraseña');
+    if (Contraseña.value.length > 6) {
+        alert('La Contraseña no es válida');
+        return false;
+	}
+    // }else {
+	// 	if(Contraseña.value.length > 6 );
+    //     alert('La Contraseña debe tener almenos 6 caracteres');
+	// 	return false;
+	// }
+
+    // var Correo = document.getElementById('Correo');
+    if (Correo === null || Correo.value === '') {
+		alert('Debes ingresar un correo');
+        return false;
     }
-    this.submit();
+	if (Terminos === null || Terminos.value === ''){
+		alert('Debes aceptar los terminos y condiciones');
+		return false;
+	}
+
+
+    document.getElementById('miformulario').submit();
+    return true;
 }
+// function validarFormulario() {
+//     var Nombres = document.getElementById('Nombres');
+//     if(Nombres == '') {
+//     alert('No has escrito nada en el Nombre');
+//     return;
+//     }
+//     var Contraseña = document.getElementById('Contraseña');
+//     if (Contraseña == 0) {
+//     alert('La Contraseña no es válida');
+//     return;
+//     }
+//     this.submit();
+// }
 
 
 
@@ -172,14 +197,14 @@ jQuery(document).ready(function () {
 	});
 	jQuery('#comunas').change(function () {
 		if (jQuery(this).val() == 'sin-region') {
-			alert('selecciones Región');
+			alert('Seleccione una Región');
 		} else if (jQuery(this).val() == 'sin-comuna') {
-			alert('selecciones Comuna');
+			alert('Seleccione una Comuna');
 		}
 	});
 	jQuery('#regiones').change(function () {
 		if (jQuery(this).val() == 'sin-region') {
-			alert('selecciones Región');
+			alert('Seleccione una Región');
 		}
 	});
 
