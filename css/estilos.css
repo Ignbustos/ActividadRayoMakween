@@ -1,10 +1,21 @@
 html{
     background: #4e4d4d;
+    
 }
 
-.container{
-    background: #f8f9fa;
+
+body{
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
 }
+
+header{
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
+}
+
+/* .container{
+    background: #f8f9fa;
+
+} */
 
 
 /* Iniciamos Footer */
@@ -63,11 +74,9 @@ footer .legal > a {
     text-decoration: none;
     color: black;
 }
-
 footer .legal > span {
     margin-right: 10px;
 }
-
 footer.bottom .links {
     display: flex;
     gap: 18px;
@@ -82,7 +91,6 @@ footer.bottom .links {
         flex-direction: column-reverse;
     }
 }
-
 @media (width >= 620px) {
     footer{
         margin: 0 auto;
@@ -93,7 +101,6 @@ footer.bottom .links {
 footer.bottom .links > a {
     font-size: 24px;
 }
-
 @media (width < 420px) {
     footer{
         text-align: center;
@@ -120,32 +127,69 @@ footer.bottom .links > a {
 }
 /* La imagen ocupa el 100% del total del cuadro */
 .c-img{
-    height: 100%;
+    height: 100%;   
     object-fit: cover;
 }
 .boton-menu{
     width: 400px;
 }
-.correo{
-    margin: 1px;
-    padding: 3px;
-}
-.contrasena{
-    margin: 1px;
-    padding: 3px;
-}
-.cajas{
-    align-items: justyfied;
-}
-.card{
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.cajacontacto{
 
-    margin-left: 1%;
-    margin-top: 1600px;
+/* Pagina Contacto */
 
-    }
+#descripcionProblema{
+    height: 100px;
+}
 
+#regiones{
+    width: 75%;
+    height: 4vh;
+    border-radius: 11px;
+}
+#comunas{
+    width: 75%;
+    height: 4vh;
+    border-radius: 11px;
+} 
+
+.contacto  #botonContacto{
+    text-align: center;
+}
+
+
+.contacto{
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+/* Pagina Mecanico */
+.card {
+    align-items: center;
+}
+
+/* Pagina Registro */
+form{
+    margin: 1%;
+}
+#caja{
+    text-align: center;
+    word-spacing: 2px;
+    font-weight: 400;
+    font-size: 24px;
+    align-items: center;
+    padding: 1%;
+    border: solid 1px;
+    margin: 10%;
+    border-radius: 10px;
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
+}
+div > a{
+    font-size: small;
+}
+.formulario input{
+    text-align: center;
+}
+#botonEnviar{
+    text-align: center;
+}
