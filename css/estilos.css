@@ -34,6 +34,7 @@ footer img{
 footer.top {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
+    margin-top: 1%;
 }
 
 footer.top .links {
@@ -123,12 +124,12 @@ footer.bottom .links > a {
 }
 /* dejamos las imagenes fijas del carrusel */
 .c-item{
-    height: 817px;
+    height: 400px;
 }
 /* La imagen ocupa el 100% del total del cuadro */
 .c-img{
     height: 100%;   
-    object-fit: cover;
+    object-fit: contain;
 }
 .boton-menu{
     width: 400px;
@@ -197,4 +198,17 @@ div > a{
 }
 #botonEnviar{
     text-align: center;
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

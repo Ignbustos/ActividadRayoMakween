@@ -54,7 +54,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item" >
-                                <a class="nav-link active" href="#">Imagenes</a>
+                                <a class="nav-link active" href="#">Tiendas</a>
                             </li>
                             <!-- Con la clase 'Active' deja con negrita  -->
                             <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
@@ -97,67 +97,77 @@
     </header>
 <body>
     <!-- Carrusel de Imagenes -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-        </div>    
-        <div class="carousel-inner" id="Tamano_Carrusel"> 
-            <!-- Primera Imagen Carrusel -->
-            <div class="carousel-item active c-item">
-                <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_1.jpg" alt="Primera slide" link="./Imagenes/Imagen_Carrusel_1.jpg">
-                </a>
-                <div class="carousel-caption d-none d-md-block top-0 mt-4" data-bs-interval="50000">
-                    <p class="mt-5 fs-3 text-uppercase">Taller Los Tres Hermanos</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Hacemos todo tipo de reparaciones a todos los modelos de autos.</h1>
-                    <!-- <button class="btn btn-secondary px-4 py-2 fs-4 mt-4">Programar</button> -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    </div>    
+                    <div class="carousel-inner" id="Tamano_Carrusel"> 
+                        <!-- Primera Imagen Carrusel -->
+                        <div class="carousel-item active c-item">
+                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_1.jpg" alt="Primera slide" link="./Imagenes/Imagen_Carrusel_1.jpg">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block top-0 mt-4" data-bs-interval="50000">
+                                <p class="mt-5 fs-3 text-uppercase">Taller Los Tres Hermanos</p>
+                                <p class="h6">Hacemos todo tipo de reparaciones a todos los modelos de autos.</p>
+                                <!-- <h1 class="display-1 fw-bolder text-capitalize"></h1> -->
+                                <!-- <button class="btn btn-secondary px-4 py-2 fs-4 mt-4">Programar</button> -->
+                            </div>
+                        </div>
+                        <!-- Segunda Imagen Carrusel -->
+                        <div class="carousel-item c-item">
+                            <a href="./trabajos/trabajo2.html" target="_blank">
+                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_2.jpg" alt="Segunda slide">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Titulo Segundo Trabajo</h1>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <!-- Tercera Imagen Carrusel -->
+                        <div class="carousel-item c-item">
+                            <a href="./trabajos/trabajo3.html" target="_blank">        
+                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_3.jpg" alt="Tercera slide">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Titulo Segundo Trabajo</h1>
+                                <p>Some representative placeholder content for the first slide.</p> 
+                            </div>
+                        </div>
+                        <!-- Cuarta Imagen Carrusel -->
+                        <div class="carousel-item c-item">
+                            <a href="./trabajos/trabajo3.html" target="_blank">        
+                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_4.jpg" alt="Cuerta slide">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Titulo Tercer Trabajo</h1>
+                                <p>Some representative placeholder content for the first slide.</p> 
+                            </div>
+                        </div>
+                    </div>    
+                                <!-- Boton Retroceder -->
+                        <button class="carousel-control-prev" type="button" href="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                        </button>
+                        <!-- Boton Avanzar -->
+                        <button class="carousel-control-next" type="button"  href="#carouselExampleIndicators" data-bs-slide="next">
+                            <!-- al colocar el span antes del icono el texto queda atras -->
+                                <span class="sr-only">Siguiente</span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>    
+                        </div>
                 </div>
+                <div class="col"></div>
             </div>
-            <!-- Segunda Imagen Carrusel -->
-            <div class="carousel-item c-item">
-                <a href="./trabajos/trabajo2.html" target="_blank">
-                <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_2.jpg" alt="Segunda slide">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Titulo Segundo Trabajo</h1>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <!-- Tercera Imagen Carrusel -->
-            <div class="carousel-item c-item">
-                <a href="./trabajos/trabajo3.html" target="_blank">        
-                <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_3.jpg" alt="Tercera slide">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Titulo Segundo Trabajo</h1>
-                    <p>Some representative placeholder content for the first slide.</p> 
-                </div>
-            </div>
-            <!-- Cuarta Imagen Carrusel -->
-            <div class="carousel-item c-item">
-                <a href="./trabajos/trabajo3.html" target="_blank">        
-                <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_4.jpg" alt="Cuerta slide">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Titulo Tercer Trabajo</h1>
-                    <p>Some representative placeholder content for the first slide.</p> 
-                </div>
-            </div>
-        </div>    
-                <!-- Boton Retroceder -->
-        <button class="carousel-control-prev" type="button" href="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-        </button>
-        <!-- Boton Avanzar -->
-        <button class="carousel-control-next" type="button"  href="#carouselExampleIndicators" data-bs-slide="next">
-            <!-- al colocar el span antes del icono el texto queda atras -->
-                <span class="sr-only">Siguiente</span>
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>    
+        </div>
     </div>
+
     <!-- Aqui Comienza el Footer -->
     <footer class="top">
         <img src="./Imagenes/Logo_sin_fondo.png" alt="logo" width="50" height="50">
@@ -169,19 +179,7 @@
                 <a href="#">Imagenes</a>
                 <a href="./contacto.html">Contacto</a>
             </div>
-            <div>
-                <h2>Enlaces de Interes</h2>
-                <a href="#">Columna 2</a>
-                <a href="#">Columna 2</a>
-                <a href="#">Columna 2</a>
             </div>
-            <div>
-                <h2>Enlaces de Interes</h2>
-                <a href="#">Columna 3</a>
-                <a href="#">Columna 3</a>
-                <a href="#">Columna 3</a>
-            </div>
-        </div>
     </footer>
     <footer class="bottom">
         <div class="legal">
