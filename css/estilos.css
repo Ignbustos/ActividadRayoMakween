@@ -12,11 +12,6 @@ header{
     background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
 }
 
-/* .container{
-    background: #f8f9fa;
-
-} */
-
 
 /* Iniciamos Footer */
 footer{
@@ -34,7 +29,6 @@ footer img{
 footer.top {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
-    margin-top: 1%;
 }
 
 footer.top .links {
@@ -122,6 +116,7 @@ footer.bottom .links > a {
         margin-top: 10%;
     }
 }
+
 /* dejamos las imagenes fijas del carrusel */
 .c-item{
     height: 500px;

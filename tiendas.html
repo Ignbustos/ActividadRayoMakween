@@ -195,7 +195,35 @@
                             <h5 class="card-title">Tienda Antonio Varas</h5>
                             <p class="card-text">Visitanos de Lunes a Viernes de 8:30 a 17:30 Hrs Horario Continuo</p>
                             <p class="card-text">Sabados de 09:00 a 16:30 Hrs Horario Continuo</p>
-                            <a href="#" class="btn btn-secondary">Tome contacto con nosotros</a>
+                            <!-- Boton de Envio Mensaje -->
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="luigi@rayomakween.cl">Enviar mensaje</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Mensaje</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label pace">Tu Correo</label>
+                                                <input placeholder="tucorreo@correo.cl" type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Mensaje</label>
+                                                <textarea class="form-control" id="message-text" placeholder="¿En que te puedo ayudar?"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-secondary">Enviar Mensaje</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Termino de Boton de Mensaje -->                        
                         </div>
                         <div class="card-footer">
                             <small class="text-body-secondary">Antonio Varas</small>
@@ -216,9 +244,9 @@
             <div class="links">
                 <div>
                     <h2>Enlaces</h2>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Mecanicos</a>
-                    <a href="./contacto.html    ">Tiendas</a>
+                    <a href="./trabajos.html">Trabajos</a>
+                    <a href="./mecanicos.html">Mecanicos</a>
+                    <a href="./tiendas.html">Tiendas</a>
 
                     <!-- Boton de Contacto -->
                     <a style="color: #0D6EFD; font-size: small;" class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contacto</a>
