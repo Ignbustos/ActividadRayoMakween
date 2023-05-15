@@ -124,7 +124,7 @@ footer.bottom .links > a {
 }
 /* dejamos las imagenes fijas del carrusel */
 .c-item{
-    height: 400px;
+    height: 500px;
 }
 /* La imagen ocupa el 100% del total del cuadro */
 .c-img{
@@ -144,17 +144,6 @@ footer.bottom .links > a {
     height: 100px;
 }
 
-
-#regiones{
-    width: 20vw;
-    height: 5vh;
-    border-radius: 16px;
-}
-#comunas{
-    width: 20vw;
-    height: 5vh;
-    border-radius: 16px;
-}
 .contacto{
     align-items: center;
     text-align: start;
@@ -169,15 +158,18 @@ footer.bottom .links > a {
     margin-top: 2%;
 }
 
+
 /* Pagina Mecanico */
 .card {
     align-items: center;
 }
 
+
 /* Pagina Registro */
 form{
     margin: 1%;
 }
+
 #caja{
     text-align: center;
     word-spacing: 2px;
@@ -185,11 +177,11 @@ form{
     font-size: 24px;
     align-items: center;
     padding: 1%;
-    border: solid 1px;
-    margin: 10%;
+    border: outset 5px;
+    margin: 1%;
     border-radius: 10px;
-    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
 }
+
 div > a{
     font-size: small;
 }
@@ -199,6 +191,8 @@ div > a{
 #botonEnviar{
     text-align: center;
 }
+
+
 .map-container{
     overflow:hidden;
     padding-bottom:56.25%;
