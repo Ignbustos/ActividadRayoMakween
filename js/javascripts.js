@@ -1,8 +1,8 @@
 // Variables pagina 'Contacto'
-var email = document.getElementById('correo');
 var direccion = document.getElementById('direccoin');
 var ciudad = document.getElementById('ciudad');
 var comuna = document.getElementById('comuna');
+var Correo = document.getElementById('correo');
 var numero = document.getElementById('numero');
 var descripcion = document.getElementById('descripcion');
 
@@ -10,8 +10,8 @@ var descripcion = document.getElementById('descripcion');
 
 var nombres = document.getElementById('Nombres');
 var Apellidos = document.getElementById('Apellidos');
+var email = document.getElementById('email');
 var Contraseña = document.getElementById('Contraseña');
-var Correo = document.getElementById('email');
 var Terminos = document.getElementById('Terminos');
 
 // Variable color 'Error'
@@ -38,7 +38,9 @@ function EnviarFormularioContacto(){
 
 // Funcion datos 'Registro'
 
-document.addEventListener("submit", function() {
+document.addEventListener("submit", function(event) {
+	event.preventDefault();
+
 	if(validarFormulario()){
 		document.getElementById("miformulario").submit();
 	}
@@ -57,30 +59,34 @@ function validarFormulario() {
         alert('Debes ingresar un Apellido');
         return false;
     }
-    // var Contraseña = document.getElementById('Contraseña');
-    if (Contraseña.value.length > 6) {
-        alert('La Contraseña no es válida');
-        return false;
-	}
-    // }else {
-	// 	if(Contraseña.value.length > 6 );
-    //     alert('La Contraseña debe tener almenos 6 caracteres');
-	// 	return false;
-	// }
 
-    // var Correo = document.getElementById('Correo');
-    if (Correo === null || Correo.value === '') {
-		alert('Debes ingresar un correo');
-        return false;
-    }
-	if (Terminos === null || Terminos.value === ''){
-		alert('Debes aceptar los terminos y condiciones');
+	if (email === null || email === ''){
+		alert('Debes ingresar un Email');
 		return false;
 	}
 
+    if (Contraseña.value === '') {
+        alert('La Contraseña no es válida');
+        
+	}else {
+		if(Contraseña.value.length < 6 )
+        alert('La Contraseña debe tener almenos 6 caracteres');
+		return false;
+	}
+	if (!terminos.checked) {
+        alert('Debes aceptar los términos y condiciones');
+        return false;
+    }
 
-    document.getElementById('miformulario').submit();
     return true;
+	// if (Terminos.checked === false) {
+	// 	alert('Debes aceptar los terminos y condiciones');
+	// 	return false;
+	// }
+
+
+    // document.getElementById('miformulario').submit();
+    // return true;
 }
 // function validarFormulario() {
 //     var Nombres = document.getElementById('Nombres');
