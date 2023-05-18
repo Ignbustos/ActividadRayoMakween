@@ -1,9 +1,15 @@
 html{
     background: #4e4d4d;
+    
 }
 
-.container{
-    background: #f8f9fa;
+
+body{
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
+}
+
+header{
+    background: radial-gradient(circle at 36.97% 42.48%, #ffffff 0, #ffffff 16.67%, #fff9fb 33.33%, #eeeeee 50%, #dbe3e0 66.67%, #cad8d3 83.33%, #bacec6 100%);
 }
 
 
@@ -63,11 +69,9 @@ footer .legal > a {
     text-decoration: none;
     color: black;
 }
-
 footer .legal > span {
     margin-right: 10px;
 }
-
 footer.bottom .links {
     display: flex;
     gap: 18px;
@@ -82,7 +86,6 @@ footer.bottom .links {
         flex-direction: column-reverse;
     }
 }
-
 @media (width >= 620px) {
     footer{
         margin: 0 auto;
@@ -93,7 +96,6 @@ footer.bottom .links {
 footer.bottom .links > a {
     font-size: 24px;
 }
-
 @media (width < 420px) {
     footer{
         text-align: center;
@@ -114,39 +116,95 @@ footer.bottom .links > a {
         margin-top: 10%;
     }
 }
+
 /* dejamos las imagenes fijas del carrusel */
 .c-item{
-    height: 817px;
+    height: 500px;
 }
 /* La imagen ocupa el 100% del total del cuadro */
 .c-img{
-    height: 100%;
-    object-fit: cover;
+    height: 100%;   
+    object-fit: contain;
 }
 .boton-menu{
     width: 400px;
 }
-.correo{
-    margin: 1px;
-    padding: 3px;
-}
-.contrasena{
-    margin: 1px;
-    padding: 3px;
-}
+
+/* Pagina Contacto */
 .cajas{
     align-items: justyfied;
 }
-.card{
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.cajacontacto{
 
-    margin-left: 1%;
-    margin-top: 1600px;
-
+#descripcionProblema{
+    height: 100px;
 }
 
+.contacto{
+    align-items: center;
+    text-align: start;
+    font-weight: 700;
+    margin: 15%;
+}
+.contacto  #botonContacto{
+    text-align: center;
+}
+.contacto div{
+    align-items: center;
+    margin-top: 2%;
+}
 
+
+/* Pagina Mecanico */
+.card {
+    align-items: center;
+}
+
+
+/* Pagina Registro */
+form{
+    margin: 1%;
+}
+
+#caja{
+    text-align: center;
+    word-spacing: 2px;
+    font-weight: 400;
+    font-size: 24px;
+    align-items: center;
+    padding: 1%;
+    border: outset 5px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+div > a{
+    font-size: small;
+}
+.formulario input{
+    text-align: center;
+}
+#botonEnviar{
+    text-align: center;
+}
+
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -33,15 +33,17 @@
 </head>
 <!-- Termino de Head -->
 
+<!-- Comienzo de Body -->
 <body>
-    <!-- Div de Navbar -->
+<!-- Div de Navbar -->
     <div class="InicioNavbar">
 
-
+    <div class="cajaNavbar">
+    
         <!-- Inicio de Navbar -->
         
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container col-12">
+            <div class="container">
                 <!-- Imagen Corporativa -->
                 <a href="./index.html"><img src="./Imagenes/Logo_sin_fondo.png" alt="mecanico" width="100" height="100"></a>
                 <a class="navbar-brand" href="./index.html">RayoMakWeen</a>
@@ -63,21 +65,21 @@
                         </li>
                         <!-- Pagina Mecanico -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="./mecanicos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Mecanicos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./mecanicos.html">Mecanicos</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Franchesco</a></li>
-                                <li><a class="dropdown-item" href="#">Luigi</a></li>
-                                <li><a class="dropdown-item" href="#">Yayo</a></li>
+                            <li><a class="dropdown-item" href="./mecanicos.html">Mecanicos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Franchesco</a></li>
+                            <li><a class="dropdown-item" href="#">Luigi</a></li>
+                            <li><a class="dropdown-item" href="#">Yayo</a></li>
                             </ul>
                         </li>
                         <!-- Pagina Tiendas -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./tiendas.html">Tiendas</a>
+                                <a class="nav-link active" aria-current="page" href="#">Tiendas</a>
                             </li>
                             <!-- Boton de Contacto -->
                             <a class="nav-link active" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contacto</a>
@@ -122,7 +124,7 @@
                                                     </div>
                                                     <div class="col-12" id="botonContacto">
                                                         <!-- Boton enviar con Funcion de JS -->
-                                                        <button type="submit" class="btn btn-secondary col-4" onclick="return EnviarFormularioContacto()">Enviar</button>
+                                                        <button type="submit" class="btn btn-secondary col-4" onclick="return EnviarEnviarFormularioFormulario()">Enviar</button>
                                                     </div>
                                                 </form>
                                                 <!-- Termino de Formulario Contacto -->
@@ -135,15 +137,12 @@
                                 </div>
                             </div>
                         </ul>
-                </ul>
-
+                    </ul>
                     <!-- Buscador y Login -->
-                    
                     <!-- Parte Buscador -->
-                    <div class="d-grid gap-2 col-6 col-sm-6 d-md-flex justify-content-md-end">
-                        <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        
+                <div class="d-grid gap-2 col-6 col-sm-6 d-md-flex justify-content-md-end">
+                    <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                         <!-- Parte Login -->
 
                         <div class="btn-group">
@@ -172,111 +171,95 @@
                             </ul>
                         </div>                    
                     </div>
-                        <!-- Termino de Buscador y Login -->
+
+                    <!-- Termino de Buscador y Login -->
                 </div>
-            </div>
+            </div> 
         </nav>
         <!-- Termino de Navbar -->
-            
 
-    </div> 
-    <!-- Termino Div Navbar -->
+    </div>
+    <!-- Div Navbar -->
+    </div>
 
-    <!-- Carrusel de Imagenes -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                    </div>    
-                    <div class="carousel-inner" id="Tamano_Carrusel"> 
+    <!-- Inicio Cuerpo Pagina -->
+    <div class="CuerpoPagina">
 
-                        <!-- Primera Imagen Carrusel -->
-                        <div class="carousel-item active c-item">
-                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_1.jpg" alt="Primera slide" link="./Imagenes/Imagen_Carrusel_1.jpg">
-                            </a>
-                            <!-- El atributo mb-X o mt-X permite colocar un margen en Bottom o Top, con parametros del 1 al 5 -->
-                            <!-- El atributo d-none sumado a d-md-block hace desaparecer el texto en cuadros muy pequeño y solo se ven de cierta medida hacia adelante -->
-                            <div class="carousel-caption d-none d-md-block top-10 mb-5" data-bs-interval="50000">
-                                <p class="fs-1 text-uppercase ">Taller RayoMakWeen</p>
-                                <p class="h3">Hacemos todo tipo de reparaciones a todos los modelos de autos.</p>
+        <!-- Inicio Div Tiendas -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-center">
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="width: 50%; margin: 3%;">
+                            <!-- Api del MAPS de Google -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6199002623!2d-70.61684182338621!3d-33.433152696628234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7b9566d44f%3A0x5c1618bbd02ec418!2sAntonio%20Varas%20666%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1683850064969!5m2!1ses!2scl" width="300" height="300" style="border:1px solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>            
+                        <div class="card-body">
+                            <h5 class="card-title">Tienda Antonio Varas</h5>
+                            <p class="card-text">Visitanos de Lunes a Viernes de 8:30 a 17:30 Hrs Horario Continuo</p>
+                            <p class="card-text">Sabados de 09:00 a 16:30 Hrs Horario Continuo</p>
+                            <!-- Boton de Envio Mensaje -->
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="luigi@rayomakween.cl">Enviar mensaje</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Mensaje</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label pace">Tu Correo</label>
+                                                <input placeholder="tucorreo@correo.cl" type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Mensaje</label>
+                                                <textarea class="form-control" id="message-text" placeholder="¿En que te puedo ayudar?"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-secondary">Enviar Mensaje</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        <!-- Termino de Boton de Mensaje -->                        
                         </div>
-                        
-                        <!-- Segunda Imagen Carrusel -->
-                        <div class="carousel-item c-item">
-                            <a href="./trabajos/trabajo2.html" target="_blank">
-                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_2.jpg" alt="Segunda slide">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Franchesco</h1>
-                            </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Antonio Varas</small>
                         </div>
-
-                        <!-- Tercera Imagen Carrusel -->
-                        <div class="carousel-item c-item">
-                            <a href="./trabajos/trabajo3.html" target="_blank">        
-                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_3.jpg" alt="Tercera slide">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Luigi</h1>
-                            </div>
-                        </div>
-                        <!-- Cuarta Imagen Carrusel -->
-                        <div class="carousel-item c-item">
-                            <a href="./trabajos/trabajo3.html" target="_blank">        
-                            <img class="d-block w-100 c-img" src="./Imagenes/Imagen_Carrusel_4.jpg" alt="Cuerta slide">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1>Yayo</h1>
-                            </div>
-                        </div>
-                    </div>    
-
-                    <!-- Boton Retroceder -->
-                    <button class="carousel-control-prev" type="button" href="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
-                    </button>
-
-                    <!-- Boton Avanzar -->
-                    <button class="carousel-control-next" type="button"  href="#carouselExampleIndicators" data-bs-slide="next">
-                        <!-- al colocar el span antes del icono el texto queda atras -->
-                            <span class="sr-only">Siguiente</span>
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Div del Footer -->
-    <div class="footer ">
-        
+
+    <!-- Div del Footre -->
+    <div class="footer">
         <!-- Aqui Comienza el Footer -->
         <footer class="bottom">
             <div class="legal">
                 <span>© Todos los derechos Reservados</span>
                 <a href="./licencia.html">Licencia</a>
                 <a href="./terminosycondiciones.html">Terminos y Condiciones</a>
-                <a href="./privacidad.html">Privacidad</a>
+                <a href="./privacidad.html  ">Privacidad</a>
             </div>
         </footer>
     </div>
-    <!-- Termino del Footer -->
 
 </body>
+
 
 <!-- importamos JavaScript -->
 <script src="./js/javascripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </html>
-
 <!-- Termino de la pagina -->
+
+
