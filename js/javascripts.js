@@ -1,10 +1,13 @@
-// Variables pagina 'Contacto'
+
+
+// Variables 'Contacto'
 var direccion = document.getElementById('direccoin');
 var ciudad = document.getElementById('ciudad');
 var comuna = document.getElementById('comuna');
-var Correo = document.getElementById('correo');
-var numero = document.getElementById('numero');
-var descripcion = document.getElementById('descripcion');
+var Correo = document.getElementById('Correo');
+var numero = document.getElementById('numeroContacto');
+var descripcion = document.getElementById('descripcionProblema');
+
 
 // Variables pagina 'Registro'
 
@@ -17,24 +20,108 @@ var Terminos = document.getElementById('Terminos');
 // Variable color 'Error'
 var error = document.getElementById('Error');
 
-// Funcion Datos 'Contacto'
-function EnviarFormularioContacto(){
+
+document.getElementById("contacto").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (EnviarFormularioContacto()) {
+        document.getElementById("contacto").submit();
+    }
+});
+
+
+function EnviarFormularioContacto() {
     console.log('Enviando Formulario...');
 
-    
     var mensajeError = [];
-    
-    if(email.value === null || email.value === ''){
-        mensajeError.push('Debes ingresar un correo');
+
+    if (correo.value === '') {
+        alert('Debes ingresar un Correo');
+        return false;
     }
 
-    if(direccion.value === null || direccion.value === ''){
-        mensajeError.push('Debes ingresar una direccion');
+    if (direccion.value === '') {
+        alert('Debes ingresar una Dirección');
+        return false;
     }
+
+    if (ciudad.value === '') {
+        alert('Debes ingresar una Ciudad');
+        return false;
+    }
+
+    if (comuna.value === '') {
+        alert('Debes ingresar una Comuna');
+        return false;
+    }
+
+    if (numero.value === '') {
+        alert('Debes ingresar un Número');
+        return false;
+    }
+
+    if (descripcion.value === '') {
+        alert('Debes ingresar una Descripción');
+        return false;
+    }
+
     error.innerHTML = mensajeError.join(', ');
-    
+
     return false;
 }
+
+// // Funcion Datos 'Contacto'
+
+// document.addEventListener("onclick", function(event) {
+// 	event.preventDefault();
+
+// 	if(EnviarFormularioContacto()){
+// 		document.getElementById("contacto").onclick();
+// 	}
+// });
+
+// function EnviarFormularioContacto(){
+//     console.log('Enviando Formulario...');
+
+//     var mensajeError = [];
+	
+//     if (correo.value === '') {
+//         alert('Debes ingresar un correo');
+//         return false;
+//     }
+
+//     if (direccion.value === '') {
+//         alert('Debes ingresar una dirección');
+//         return false;
+//     }
+
+//     if (ciudad.value === '') {
+//         alert('Debes ingresar una Ciudad');
+//         return false;
+//     }
+
+//     if (comuna.value === '') {
+//         alert('Debes ingresar una Comuna');
+//         return false;
+//     }
+
+//     if (numero.value === '') {
+//         alert('Debes ingresar un Número');
+//         return false;
+//     }
+
+//     if (descripcion.value === '') {
+//         alert('Debes ingresar una Descripción');
+//         return false;
+//     }
+
+//     error.innerHTML = mensajeError.join(', ');
+    
+//     return false;
+// }
+
+
+
 
 // Funcion datos 'Registro'
 
@@ -42,7 +129,11 @@ document.addEventListener("submit", function(event) {
 	event.preventDefault();
 
 	if(validarFormulario()){
-		document.getElementById("miformulario").submit();
+		// Aquí se envían los datos del formulario
+		event.target.submit();
+
+		// Limpiar los campos del formulario después de enviar los datos
+		event.target.reset();
 	}
 });
 
@@ -73,12 +164,13 @@ function validarFormulario() {
         alert('La Contraseña debe tener almenos 6 caracteres');
 		return false;
 	}
-	if (!terminos.checked) {
+	if (!Terminos.checked) {
         alert('Debes aceptar los términos y condiciones');
         return false;
     }
 
     return true;
+
 	// if (Terminos.checked === false) {
 	// 	alert('Debes aceptar los terminos y condiciones');
 	// 	return false;

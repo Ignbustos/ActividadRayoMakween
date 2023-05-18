@@ -44,7 +44,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <!-- Imagen Corporativa -->
-                <img src="./Imagenes/Logo_sin_fondo.png" alt="mecanico" width="100" height="100">
+                <a href="./index.html"> <img src="./Imagenes/Logo_sin_fondo.png" alt="mecanico" width="100" height="100"></a>
                 <a class="navbar-brand" href="./index.html">RayoMakWeen</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -93,37 +93,36 @@
                                         <div class="modal-body">
                                             <div class="modal-body col-12">
                                                 <!-- Inicio Formulario Contacto -->
-                                                <form class="contacto">
+                                                <form class="contacto" id="contacto">
                                                     <div class="col-12">
-                                                        <label for="inputEmail4" class="form-label" id="correo">E-mail</label>
-                                                        <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@rayomakween.cl">
+                                                        <label for="correo" class="form-label">E-mail</label>
+                                                        <input type="email" class="form-control" id="correo" placeholder="ejemplo@rayomakween.cl">
                                                     </div>
                                                     <div class="col-12">
-                                                        <label for="inputAddress" class="form-label" id="direccion">Dirección</label>
-                                                        <input type="text" class="form-control" id="inputDireccion" placeholder="Calle 1">
+                                                        <label for="inputAddress" class="form-label">Dirección</label>
+                                                        <input type="text" class="form-control" id="direccion" placeholder="Calle 1">
                                                     </div>
                                                     <div class="col-12">
-                                                        <label for="inputCity" class="form-label" id="ciudad">Ciudad</label>
+                                                        <label for="inputCity" class="form-label">Ciudad</label>
                                                         <br>
                                                         <select id="regiones" class="form-select"></select>
                                                     </div>
                                                     <div class="col-12">
-                                                        <label for="inputState" class="form-label" id="comuna" >Comuna</label>
+                                                        <label for="inputState" class="form-label">Comuna</label>
                                                         <br>
                                                         <select class="form-select" id="comunas"></select>
-                                                        </select>
                                                     </div>
                                                     <div class="col-12">
-                                                        <label for="inputZip" class="form-label" id="numeroContacto">Número de Contacto</label>
-                                                        <input type="text" class="form-control" id="inputZip" placeholder="+569">
+                                                        <label for="inputZip" class="form-label">Número de Contacto</label>
+                                                        <input type="text" class="form-control" id="numeroContacto" placeholder="+569">
                                                     </div>
                                                     <div class="col-12">
-                                                        <label for="none" class="form-label" id="descripcion">Descripción del problema</label>
-                                                        <input class="form-control" id="descripcionProblema" placeholder="Cuentanos, ¿En que te podemos ayudar?"></input>
+                                                        <label for="none" class="form-label">Descripción del problema</label>
+                                                        <input class="form-control" id="descripcion" placeholder="Cuéntanos, ¿En qué te podemos ayudar?">
                                                     </div>
                                                     <div class="col-12" id="botonContacto">
                                                         <!-- Boton enviar con Funcion de JS -->
-                                                        <button type="submit" class="btn btn-secondary col-4" onclick="return EnviarEnviarFormularioFormulario()">Enviar</button>
+                                                        <button type="submit" class="btn btn-secondary col-4" onclick="return EnviarFormularioContacto()">Enviar</button>
                                                     </div>
                                                 </form>
                                                 <!-- Termino de Formulario Contacto -->
@@ -187,6 +186,7 @@
         <div class="container text-center">
             <div class="divFormulario">
                 <div class="row" id="parteIzquierda">
+
                     <!-- Formulario de Registro -->
                     <div class="cajaFormulario col-12 col-mb-8 col-lg-12">
                         <div class="row formulario">
@@ -233,77 +233,7 @@
     <!-- Div del Footre -->
     <div class="footer">
         <!-- Aqui Comienza el Footer -->
-        <footer class="top">
-            <img src="./Imagenes/Logo_sin_fondo.png" alt="logo" width="100" height="100">
-            <div class="links">
-                <div>
-                    <h2>Enlaces</h2>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Mecanicos</a>
-                    <a href="./tiendas.html">Tiendas</a>
-
-                    <!-- Boton de Contacto -->
-                    <a style="color: #0D6EFD; font-size: small;" class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contacto</a>
-                    
-                    <!-- Caja Formulario Contacto -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Contactanos</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="modal-body col-12">
-                    
-                                        <!-- Inicio Formulario Contacto -->
-                                        <form class="contacto">
-                                            <div class="col-12">
-                                                <label for="inputEmail4" class="form-label" id="correo">E-mail</label>
-                                                <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@lth.cl">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label" id="direccion">Dirección</label>
-                                                <input type="text" class="form-control" id="inputDireccion" placeholder="Calle 1">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputCity" class="form-label" id="ciudad">Ciudad</label>
-                                                <br>
-                                                <select id="regiones" class="form-select"></select>
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputState" class="form-label" id="comuna" >Comuna</label>
-                                                <br>
-                                                <select class="form-select" id="comunas"></select>
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputZip" class="form-label" id="numeroContacto">Número de Contacto</label>
-                                                <input type="text" class="form-control" id="inputZip" placeholder="+569">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="none" class="form-label" id="descripcion">Descripción del problema</label>
-                                                <input class="form-control" id="descripcionProblema" placeholder="Cuentanos, ¿En que te podemos ayudar?"></input>
-                                            </div>
-                                            <div class="col-12" id="botonContacto">
-                    
-                                                <!-- Boton enviar con Funcion de JS -->
-                                                <button type="submit" class="btn btn-secondary col-4" onclick="return EnviarEnviarFormularioFormulario()">Enviar</button>
-                                            </div>
-                                        </form>
-                    
-                                        <!-- Termino de Formulario Contacto -->
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>            
-                </div>
-            </div>
-        </footer>
+        
         <footer class="bottom">
             <div class="legal">
                 <span>© Todos los derechos Reservados</span>
@@ -314,12 +244,13 @@
         </footer>
     </div>
 
+    <!-- importamos JavaScript -->
+    <script src="./js/javascripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 
-<!-- importamos JavaScript -->
-<script src="./js/javascripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </html>
 <!-- Termino de la pagina -->
